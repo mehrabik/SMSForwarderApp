@@ -11,8 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-import com.example.smsforwarder.R;
-
 public class MainActivity extends AppCompatActivity {
 
     EditText mSmtpServer;

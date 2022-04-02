@@ -6,7 +6,7 @@ android {
     compileSdk 30
 
     defaultConfig {
-        applicationId "com.example.smsforwarder"
+        applicationId "com.adventuresinsoftwareengineering.smsforwarder"
         minSdk 21
         targetSdk 30
         versionCode 1
