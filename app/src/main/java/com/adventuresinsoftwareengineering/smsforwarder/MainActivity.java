@@ -62,11 +62,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
-
     private void requestPermissions() {
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECEIVE_SMS}, 1);
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.INTERNET}, 2);
