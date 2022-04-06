@@ -11,14 +11,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:padding="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:text="@string/top_text"/>
-
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -27,6 +19,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
+                <TextView
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="@string/top_text"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -47,6 +47,7 @@
                         android:maxLines="1"
                         android:lines="1"
                         android:singleLine="true"
+                        android:nextFocusForward="@id/edittext_smtp_port"
                         android:layout_height="wrap_content">
                     </EditText>
                 </LinearLayout>
@@ -71,6 +72,9 @@
                         android:maxLines="1"
                         android:lines="1"
                         android:singleLine="true"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:nextFocusForward="@id/edittext_sender_email"
                         android:layout_height="wrap_content">
                     </EditText>
                 </LinearLayout>
@@ -94,6 +98,7 @@
                         android:maxLines="1"
                         android:lines="1"
                         android:singleLine="true"
+                        android:nextFocusForward="@id/edittext_sender_password"
                         android:layout_height="wrap_content">
                     </EditText>
                 </LinearLayout>
@@ -116,7 +121,9 @@
                         android:layout_marginLeft="8dp"
                         android:maxLines="1"
                         android:lines="1"
+                        android:inputType="textPassword"
                         android:singleLine="true"
+                        android:nextFocusForward="@id/edittext_receiver_email"
                         android:layout_height="wrap_content">
                     </EditText>
                 </LinearLayout>
@@ -140,6 +147,8 @@
                         android:maxLines="1"
                         android:lines="1"
                         android:singleLine="true"
+                        android:inputType="textEmailAddress"
+                        android:nextClusterForward="@id/spinner_sim_slot"
                         android:layout_height="wrap_content">
                     </EditText>
                 </LinearLayout>
@@ -160,6 +169,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="8dp"
                         android:layout_width="wrap_content"
+                        android:nextFocusForward="@id/update_button"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
             </LinearLayout>
