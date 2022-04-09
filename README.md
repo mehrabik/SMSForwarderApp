@@ -1,2 +1,2 @@
 # SMSForwarderApp
-A simple Android app to forward (as an email) any SMSs received on the phone
+A simple Android app that allows you to forward any SMS you receive on your phone to an email address of your choosing.
